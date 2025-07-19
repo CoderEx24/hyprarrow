@@ -1,3 +1,4 @@
+@define-color neon_blue #04d9ff;
 @define-color bright_blue #174aff;
 @define-color dark_blue #111114;
 @define-color dark_red #890202;
@@ -17,7 +18,7 @@ window#waybar {
 .modules-left {
     padding: 0 0.2em;
     background-color: @dark_blue;
-    border: 1px solid @bright_blue;
+    border: 1px solid @neon_blue;
     border-radius: 12px;
 }
 
