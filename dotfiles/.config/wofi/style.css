@@ -1,0 +1,24 @@
+@define-color neon_blue #04d9ff;
+@define-color bright_blue #174aff;
+@define-color dark_blue #111114;
+@define-color dark_red #890202;
+
+#window {
+  background-color: @dark_blue;
+  border: 2px solid @neon_blue;
+  border-radius: 1.2em;
+  font-size: 1.2em;
+}
+
+#entry {
+  display: grid;
+  
+}
+
+#entry:selected {
+  background-color: @dark_blue;
+}
+
+#text:selected {
+  color: @bright_blue
+}
