@@ -1,0 +1,42 @@
+@define-color bright_blue #174aff;
+@define-color dark_blue #111114;
+@define-color dark_red #890202;
+
+window#waybar {
+    background-color: transparent;
+    margin: 200px;
+}
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+.modules-center,
+.modules-left {
+    padding: 0 0.2em;
+    background-color: @dark_blue;
+    border: 1px solid @bright_blue;
+    border-radius: 12px;
+}
+
+.module {
+    padding: 0 0.5em;
+}
+
+#workspaces button {
+    padding: 0 0.9em;
+    transition-property: background-color, color;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+#workspaces button.active {
+    background-color: @bright_blue;
+    color: @dark_blue;
+}
+
+#workspaces button.urgent {
+    color: @dark_red;
+}
